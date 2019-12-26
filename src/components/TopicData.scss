@@ -1,0 +1,154 @@
+@import "sass/vars";
+@import "sass/mixins";
+
+.stat-wrap {
+    height: 100vh;
+    width: 100%;
+    background-color: $bg-main;
+}
+
+.stat {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-topics {
+    height: 50px;
+    display: flex;
+
+    .back-topics-link {
+        @include home-nav-btn;
+    }
+
+    .back-home-link-2 {
+        display: flex;
+        @include flex-xy-centered;
+        text-decoration: none;
+        color: $text-color;
+        width: 50px;
+        height: 100%;
+        margin-left: 90px;
+        font-size: 20px;
+        text-transform: capitalize;
+        &:hover span {
+            font-size: 30px;
+        }
+        span {
+            transition: 500ms ease;
+        }
+
+    }
+}
+
+
+
+.topic-name-det {
+    list-style-type: none;
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    background-color: $border-color;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    h4, .small-devices {
+        color: white;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        margin: 0;
+        height: 100%;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+    }
+    .small-devices {
+      display: none;
+    }
+
+    img {
+        height: 85%;
+        margin-left: 15px;
+    }
+}
+
+.chart-info {
+    position: relative;
+    display: flex;
+    height: calc(85% - 50px);
+    width: 100%;
+    .chart {
+        // flex-grow: 1;
+        position: relative;
+        display: flex;
+        align-self: flex-start;
+        height: 95%;
+        width: 80%;
+        & {
+            box-sizing: border-box;
+            // background-color: red;
+        }
+
+        .chart-types {
+            position: absolute;
+            top: 5%;
+            right: 2%;
+            display: flex;
+            flex-direction: column;
+            button {
+                height: 40px;
+                width: 40px;
+                margin: 0 10px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: none;
+                span {
+                    font-size: 25px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+
+    .nodata {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-color;
+        margin: 0;
+    }
+
+    .top-countries {
+        width: 20%;
+        ul {
+            margin: 0;
+            padding: 0;
+            height: 95%;
+            overflow: auto;
+            li {
+                height: 50px;
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                img {
+                    margin: 0;
+                    padding: 0 5px;
+                    height: 100%;
+                }
+
+                span {
+                    text-transform: capitalize;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

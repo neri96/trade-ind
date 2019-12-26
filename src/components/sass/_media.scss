@@ -1,0 +1,157 @@
+    @media screen and (max-height: 1000px) {
+        .home-page {
+        }
+    }
+
+    @media screen and (max-height: 640px) {
+        .hp-descr {
+            margin: 0 !important;
+        }
+    }
+
+    @media screen and (max-height: 600px) {
+        .trade-info-hp {
+            display: none;
+        }
+    }
+
+
+
+    @media screen and (max-width: 1000px) {
+        .topics-list {
+            ul {
+                padding: 0 20px !important;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px 0 !important;
+                    min-height: 70px !important;
+                    .topic-name {
+                        width: 100% !important;
+                    }
+                }
+
+                .topic-name-link {
+                    justify-content: center;
+                }
+
+                .arrow-li {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .chart-info {
+          flex-direction: column;
+          .chart {
+            min-height: 350px !important;
+            width: 100% !important;
+          }
+          .top-countries {
+            width: 100% !important;
+            ul {
+              display: flex;
+              flex-direction: row !important;
+              flex-wrap: wrap;
+              overflow: visible !important;
+              li {
+                flex-basis: 25%;
+              }
+            }
+          }
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+      .topic-name-det {
+        h4 {
+          max-width: 60% !important;
+        }
+        .country-name {
+          padding: 0 10px;
+        }
+      }
+      .top-countries {
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 630px) {
+      .country-name {
+        padding-right: 15px !important;
+      }
+      .topic-name-det {
+        img {
+          margin-left: 0px !important;
+        }
+      }
+    }
+
+    @media screen and (max-width: 590px) {
+      .topic-name-det {
+        h4 {
+          display: none !important;
+        }
+        .small-devices {
+          display: flex !important;
+        }
+        .topic-name-top {
+          margin-right: 0 !important;
+        }
+      }
+
+      .top-countries {
+        ul {
+          li {
+            flex-basis: calc(100%/3) !important;
+            box-sizing: border-box;
+            img {
+              height: 80% !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .topic-name-det {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        .topic-name-top {
+          height: 50% !important;
+          font-size: 12px;
+          align-items: flex-start !important;
+          width: 100%;
+          flex-grow: 1;
+          padding: 10px 10px 0 10px !important;
+        }
+        .country-name-small, img {
+          height: 45% !important;
+          padding-bottom: 5px !important;
+        }
+        .country-name-small {
+          padding-left: 10px !important;
+        }
+    }
+
+    .top-countries {
+      ul {
+        li {
+          flex-basis: calc(100%/3) !important;
+          padding: 0 5px;
+          img {
+            height: 40% !important;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }

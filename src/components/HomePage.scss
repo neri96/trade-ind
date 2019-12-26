@@ -1,0 +1,42 @@
+@import "sass/vars";
+@import "sass/mixins";
+@import "sass/media";
+
+.home-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    @include flex-xy-centered;
+    flex-direction: column;
+}
+
+.hp-btn {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.go-btn-hp {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $text-color;
+    border: 3px solid $border-color;
+    padding: 20px 60px;
+    border-radius: 10px;
+    background-color: #0d0d0d;
+    transition: 300ms;
+    &:hover {
+        background-color: $bg-main;
+    }
+}
+
+.hp-descr {
+    text-align: center;
+    width: 80%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    p {
+        color: $text-color;
+    }
+}
